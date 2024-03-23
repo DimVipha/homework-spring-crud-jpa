@@ -1,12 +1,12 @@
 package co.istad.springwebmvc.dto;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.Size;
 
-public record ProductEditRequest(
+
+public record CategoryRequest(
         @NotBlank
         String name,
-        @Positive
-        Double price
+        String description
 ) {
 }
